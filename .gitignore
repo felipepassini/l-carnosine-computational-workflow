@@ -1,0 +1,74 @@
+# ============================================
+# macOS
+# ============================================
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# ============================================
+# Python
+# ============================================
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+.env
+.env.*
+
+# ============================================
+# Editors / temporary files
+# ============================================
+.vscode/
+.idea/
+*~
+*.bak
+*.swp
+
+# ============================================
+# ORCA generated / heavy output files
+# ============================================
+*.gbw
+*.densities
+*.carthess
+*.hess
+*.engrad
+*.opt
+*.tmp
+*.tmp.*
+*.scfp
+*.scfr
+*.uno
+*.uco
+*.qro
+*.molden
+*.molden.input
+*.property.txt
+*.property.json
+*_trj.xyz
+*.trj
+*.out
+*.err
+
+# ============================================
+# ChimeraX
+# Sessions may contain unpublished structures/results
+# ============================================
+*.cxs
+
+# ============================================
+# Local unpublished research material
+# ============================================
+private/
+research_private/
+runs/
+results/
+outputs/
+scratch/
+tmp/
+
+
