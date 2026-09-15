@@ -10,6 +10,9 @@ readme = "README.md"
 requires-python = ">=3.11"
 dependencies = []
 
+[project.scripts]
+orca-summary = "carnosine_workflow.cli:main"
+
 [project.optional-dependencies]
 dev = [
     "pytest>=9",
