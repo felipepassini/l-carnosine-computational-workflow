@@ -76,7 +76,6 @@ python -m pip install -e ".[dev]"
 
 ## Repository Structure
 
-```text
 .
 ├── docs/                  Project documentation and scientific notes
 ├── examples/
