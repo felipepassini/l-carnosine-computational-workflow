@@ -77,3 +77,7 @@ venv/
 # ============================================
 !tests/fixtures/sanitized/
 !tests/fixtures/sanitized/**/*.out
+
+# Explicitly allow approved public demonstration outputs
+!examples/public/outputs/
+!examples/public/outputs/**/*.out
