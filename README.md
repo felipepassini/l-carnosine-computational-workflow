@@ -1,0 +1,71 @@
+# L-Carnosine Computational Workflow
+
+A reproducible computational workflow and Python toolkit for ORCA-based
+geometry optimization and vibrational analysis, developed in the context
+of an undergraduate research project in computational physics at the
+University of São Paulo (USP).
+
+## Project Status
+
+> **Work in progress**
+
+This repository is currently focused on computational methodology,
+workflow development, automation, validation, and reproducibility.
+
+Research results, unpublished molecular structures, and scientific
+interpretations are intentionally excluded unless explicitly approved
+for public release.
+
+## Scientific Context
+
+The project is motivated by the study of L-carnosine and the relationship
+between molecular structure, protonation state, electronic structure,
+and vibrational properties.
+
+The computational workflow involves electronic-structure calculations
+and vibrational analysis using Density Functional Theory (DFT).
+
+At this stage, the repository should not be interpreted as presenting
+definitive scientific conclusions about L-carnosine.
+
+## Goals
+
+The main goals of this repository are to:
+
+- develop a reproducible workflow for ORCA calculations;
+- automate the analysis of ORCA outputs with Python;
+- validate geometry optimizations and vibrational calculations;
+- extract frequencies and infrared intensities;
+- generate analysis tables and scientific visualizations;
+- compare computational calculations in a structured way;
+- document the reasoning behind each step of the workflow.
+
+## Computational Tools
+
+The current workflow uses:
+
+- **ORCA 6** — electronic-structure calculations;
+- **Avogadro 2** — molecular structure preparation and visualization;
+- **UCSF ChimeraX** — molecular visualization;
+- **SEQCROW** — visualization and analysis of quantum-chemistry calculations;
+- **Python** — automated parsing, analysis, validation, and visualization;
+- **Git/GitHub** — version control and reproducible development.
+
+## Repository Structure
+
+```text
+.
+├── docs/                  Project documentation and scientific notes
+├── examples/
+│   └── public/            Sanitized or explicitly approved examples
+├── figures/
+│   └── demo/              Demonstration figures safe for publication
+├── src/
+│   └── carnosine_workflow/
+│                           Python analysis tools
+├── tests/
+│   └── fixtures/
+│       └── sanitized/     Sanitized files used for automated tests
+├── .gitignore
+├── pyproject.toml
+└── README.md
