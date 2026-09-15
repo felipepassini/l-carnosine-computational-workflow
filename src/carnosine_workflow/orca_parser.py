@@ -5,10 +5,25 @@ OPTIMIZATION_CONVERGED_MESSAGE = "THE OPTIMIZATION HAS CONVERGED"
 
 NORMAL_TERMINATION_MESSAGE = "ORCA TERMINATED NORMALLY"
 
+OPTIMIZATION_CYCLE_PATTERN = re.compile(
+    r"GEOMETRY OPTIMIZATION CYCLE\s+(\d+)"
+)
+
 FINAL_ENERGY_PATTERN = re.compile(
     r"FINAL SINGLE POINT ENERGY\s+"
     r"([-+]?(?:\d+(?:\.\d*)?|\.\d+)(?:[Ee][+-]?\d+)?)"
 )
+
+def extract_optimization_cycles(output_file: str | Path) -> int | None:
+    """Extract the number of geometry optimization cycles."""
+    text = read_output(output_file)
+
+    cycles = OPTIMIZATION_CYCLE_PATTERN.findall(text)
+
+    if not cycles:
+        return None
+
+    return max(int(cycle) for cycle in cycles)
 
 
 def read_output(output_file: str | Path) -> str:
