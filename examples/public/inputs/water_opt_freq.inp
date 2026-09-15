@@ -1,0 +1,10 @@
+# Public demonstration input
+# Unrelated to the active L-carnosine research project.
+
+! B3LYP def2-SVP Opt Freq TightSCF
+
+%geom
+  MaxIter 100
+end
+
+* xyzfile 0 1 ../structures/water.xyz
