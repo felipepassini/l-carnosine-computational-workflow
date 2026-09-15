@@ -126,6 +126,23 @@ not presented as the numerical result of the accompanying ORCA input.
 
 See [`examples/public/README.md`](examples/public/README.md) for details.
 
+### Synthetic IR Demonstration
+
+The synthetic ORCA-style output can also be processed programmatically to
+generate a simple IR visualization.
+
+![Synthetic IR spectrum demonstration](figures/demo/water_ir_demo.png)
+
+The figure is generated with:
+
+```bash
+python scripts/generate_water_ir_demo.py
+
+The script uses the project's own ORCA parser to extract IR frequencies
+and intensities before plotting them with Matplotlib.
+
+All numerical values shown in this demonstration are synthetic.
+
 ## Repository Structure
 
 ```text
