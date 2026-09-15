@@ -216,6 +216,43 @@ The Git repository should contain primarily:
 
 Scientific results should only be added after explicit review.
 
+## Current Methodological Direction
+
+The current objective is not to reproduce previous theoretical calculations
+numerically using identical computational settings.
+
+Instead, the project aims to update the computational methodology and
+evaluate how the resulting predictions compare with previously reported
+reference data.
+
+For the zwitterionic form of L-carnosine, the current computational
+direction includes the use of an implicit aqueous environment through
+CPCM(Water).
+
+The general comparison strategy is therefore:
+
+```text
+Reference experimental/theoretical data
+              ↓
+Updated computational methodology
+              ↓
+Geometry optimization
+              ↓
+Vibrational calculation
+              ↓
+Validation
+              ↓
+Comparison with reference data
+
+Differences between previous and current calculations should not
+automatically be interpreted as errors. They may result from changes in
+the computational model, solvent treatment, molecular structure, or other
+methodological choices.
+
+Specific numerical results and scientific conclusions from these
+comparisons are not included in this repository unless approved for
+public release.
+
 ## Guiding Principle
 
 The purpose of the workflow is not only to obtain a numerical result.

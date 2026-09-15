@@ -76,3 +76,34 @@ unreleased scientific data.
 
 Automated tests also provide protection against accidentally breaking
 previously working analysis functions as the code evolves.
+
+## Methodological Update vs Numerical Reproduction
+
+An important distinction in the current research direction is that the
+goal is not necessarily to reproduce older theoretical calculations
+numerically.
+
+The purpose of revisiting previous calculations is to apply an updated
+computational methodology and compare the resulting predictions with
+reference data.
+
+For the zwitterionic form currently under investigation, the methodology
+includes implicit aqueous solvation using CPCM(Water).
+
+Consequently, differences between older and newer calculations are not,
+by themselves, evidence of an incorrect calculation.
+
+They must be interpreted in light of methodological differences such as:
+
+- solvation treatment;
+- initial molecular geometry;
+- protonation state;
+- density functional;
+- basis set;
+- optimization procedure;
+- other computational settings.
+
+The relevant scientific question is therefore not simply whether two
+calculations produce identical numerical values, but whether the updated
+model provides a physically meaningful description and how its predictions
+compare with the available reference data.
