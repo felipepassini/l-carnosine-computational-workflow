@@ -16,6 +16,7 @@ orca-summary = "carnosine_workflow.cli:main"
 [project.optional-dependencies]
 dev = [
     "pytest>=9",
+    "matplotlib>=3.11",
 ]
 
 [tool.setuptools.packages.find]
