@@ -51,6 +51,29 @@ The current workflow uses:
 - **Python** — automated parsing, analysis, validation, and visualization;
 - **Git/GitHub** — version control and reproducible development.
 
+## Current Features
+
+The current Python toolkit can:
+
+- detect normal ORCA termination;
+- detect geometry optimization convergence;
+- extract the final electronic energy;
+- determine the number of geometry optimization cycles;
+- extract vibrational frequencies;
+- count imaginary frequencies;
+- extract calculated IR frequencies and intensities;
+- rank the strongest IR bands;
+- generate a compact calculation summary.
+
+The parser is covered by automated tests using synthetic ORCA outputs.
+
+## Command-Line Interface
+
+After installing the project in a Python environment:
+
+```bash
+python -m pip install -e ".[dev]"
+
 ## Repository Structure
 
 ```text
