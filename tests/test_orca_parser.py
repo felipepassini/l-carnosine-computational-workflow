@@ -1,8 +1,9 @@
 from pathlib import Path
 
 from carnosine_workflow.orca_parser import (
-    extract_final_energy,
+    extract_final_energy,	
     terminated_normally,
+    optimization_converged,
 )
 
 
@@ -32,6 +33,15 @@ def test_returns_none_when_energy_is_missing():
 
     assert extract_final_energy(output_file) is None
 
+def test_detects_converged_optimization():
+    output_file = FIXTURES / "normal_termination.out"
 
+    assert optimization_converged(output_file) is True
+
+
+def test_detects_nonconverged_optimization():
+    output_file = FIXTURES / "abnormal_termination.out"
+
+    assert optimization_converged(output_file) is False
 
 

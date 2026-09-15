@@ -1,6 +1,7 @@
 import re
 from pathlib import Path
 
+OPTIMIZATION_CONVERGED_MESSAGE = "THE OPTIMIZATION HAS CONVERGED"
 
 NORMAL_TERMINATION_MESSAGE = "ORCA TERMINATED NORMALLY"
 
@@ -44,3 +45,10 @@ def extract_final_energy(output_file: str | Path) -> float | None:
         return None
 
     return float(matches[-1])
+
+
+def optimization_converged(output_file: str | Path) -> bool:
+    """Check whether an ORCA geometry optimization converged."""
+    text = read_output(output_file)
+
+    return OPTIMIZATION_CONVERGED_MESSAGE in text
