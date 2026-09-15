@@ -63,12 +63,10 @@ venv/
 # ============================================
 # Local unpublished research material
 # ============================================
-private/
-research_private/
-runs/
-results/
-outputs/
-scratch/
-tmp/
-
-
+/private/
+/research_private/
+/runs/
+/results/
+/outputs/
+/scratch/
+/tmp/
