@@ -70,3 +70,9 @@ venv/
 /outputs/
 /scratch/
 /tmp/
+
+# ============================================
+# Explicitly allow sanitized ORCA test outputs
+# ============================================
+!tests/fixtures/sanitized/
+!tests/fixtures/sanitized/**/*.out
