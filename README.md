@@ -107,6 +107,25 @@ The command reports objective information extracted from the calculation.
 It does not determine whether the resulting molecular structure is
 chemically or experimentally relevant.
 
+## Public Demonstration
+
+A complete public example is available in [`examples/public/`](examples/public/).
+
+The example uses a simple water molecule to demonstrate the workflow
+without exposing unpublished L-carnosine research data.
+
+It includes:
+
+- a public `.xyz` molecular structure;
+- an example ORCA `Opt Freq` input;
+- a synthetic ORCA-style output;
+- instructions for analyzing the demonstration output with `orca-summary`.
+
+The demonstration output contains illustrative values and is explicitly
+not presented as the numerical result of the accompanying ORCA input.
+
+See [`examples/public/README.md`](examples/public/README.md) for details.
+
 ## Repository Structure
 
 ```text
