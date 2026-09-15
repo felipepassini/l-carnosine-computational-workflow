@@ -73,9 +73,43 @@ After installing the project in a Python environment:
 
 ```bash
 python -m pip install -e ".[dev]"
+```
+
+an ORCA output can be summarized directly from the terminal:
+
+```bash
+orca-summary calculation.out
+```
+
+The number of IR bands displayed can also be controlled:
+
+```bash
+orca-summary calculation.out --top-ir 10
+```
+
+Example output:
+
+```text
+ORCA Calculation Summary
+------------------------
+Normal termination:       True
+Optimization converged:   True
+Final energy (Eh):        ...
+Optimization cycles:      ...
+Imaginary frequencies:    ...
+
+Top IR bands
+------------------------
+Mode ... | ... cm^-1 | ... km/mol
+```
+
+The command reports objective information extracted from the calculation.
+It does not determine whether the resulting molecular structure is
+chemically or experimentally relevant.
 
 ## Repository Structure
 
+```text
 .
 ├── docs/                  Project documentation and scientific notes
 ├── examples/
@@ -91,3 +125,4 @@ python -m pip install -e ".[dev]"
 ├── .gitignore
 ├── pyproject.toml
 └── README.md
+```
